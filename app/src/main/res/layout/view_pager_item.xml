@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 20171010 카드뷰 형태로 추가 -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/viewPagerCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/layoutInfo"
+        android:background="@drawable/card_template"
+        >
+        <ImageView
+            android:id="@+id/right_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_chevron_right_black_18dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/chat_activity_view_pager_right_nav_margin"
+            />
+
+        <ImageView
+            android:id="@+id/left_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/ic_chevron_left_black_18dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/chat_activity_view_pager_left_nav_margin"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgViewIcon"
+            android:src="@drawable/ic_no_photo"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="fitXY"
+            android:contentDescription="Icon"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/left_nav" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLabelPlaceName"
+            android:text="이름 "
+            android:layout_toRightOf="@+id/imgViewIcon"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="13dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLabelPlaceClass"
+            android:text="종류 "
+            android:layout_toRightOf="@+id/imgViewIcon"
+            android:layout_below="@+id/txtLabelPlaceName"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="13dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLabelPlaceDesc"
+            android:text="설명 "
+            android:layout_toRightOf="@+id/imgViewIcon"
+            android:layout_below="@+id/txtLabelPlaceClass"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="13dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/txtPlaceDesc"
+            android:layout_toRightOf="@+id/imgViewIcon"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="16dp"
+                android:id="@+id/imgViewPlaceViewCnt"
+                android:src="@drawable/eye"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:scaleType="fitXY"
+                android:contentDescription="Icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewPlaceViewCnt"
+                android:text="Like "
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="13dp"
+                />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="16dp"
+                android:id="@+id/imgViewPlaceCommentCnt"
+                android:src="@drawable/conver"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="3dp"
+                android:scaleType="fitXY"
+                android:contentDescription="Icon"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewPlaceCommentCnt"
+                android:text="Like "
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPlaceName"
+            android:text="PlaceName"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="13dp"
+            android:layout_alignBaseline="@+id/txtLabelPlaceName"
+            android:layout_alignBottom="@+id/txtLabelPlaceName"
+            android:layout_toEndOf="@+id/txtLabelPlaceName"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPlaceClass"
+            android:text="PlaceClass"
+            android:layout_below="@+id/txtPlaceName"
+            android:textColor="@android:color/darker_gray"
+            android:layout_toRightOf="@+id/imgViewIcon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_alignBaseline="@+id/txtLabelPlaceClass"
+            android:layout_alignBottom="@+id/txtLabelPlaceClass"
+            android:layout_toEndOf="@+id/txtLabelPlaceClass"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPlaceDesc"
+            android:text="PlaceDescription"
+            android:layout_below="@+id/txtPlaceClass"
+            android:textColor="@android:color/darker_gray"
+            android:layout_toRightOf="@+id/imgViewIcon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_alignBaseline="@+id/txtLabelPlaceDesc"
+            android:layout_alignBottom="@+id/txtLabelPlaceDesc"
+            android:layout_toEndOf="@+id/txtLabelPlaceDesc"
+            />
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:text="X/Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtItemCount"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/viewPagerCardView"
+        android:textSize="10dp"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutShareReg5"
+        android:layout_below="@+id/txtItemCount"
+        android:layout_alignParentStart="true">
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="자세히 보기"
+            android:id="@+id/btnPlaceDetail"
+            android:minHeight="50dp"
+            android:maxWidth="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="전체 보기"
+            android:id="@+id/btnAllPlaceList"
+            android:minHeight="50dp"
+            android:maxWidth="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</RelativeLayout>

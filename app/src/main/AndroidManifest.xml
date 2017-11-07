@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chat.seoul.here"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- To run a bot you need Internet permissions -->
+
+    <receiver
+        android:name=".Alarm"
+        android:process=":remote" />
+
+<!--    <permission
+        android:name="com.example.jjw.mydemo.googlemap.locationapi.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />-->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.jjw.mydemo.googlemap.locationapi.maps.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+
+
+
+    <uses-sdk tools:overrideLibrary="android.support.v4, android.support.compat, android.support.mediacompat, android.support.coreutils, android.support.coreui, android.support.fragment,com.google.android.gms.appindexing, com.google.android.gms.base, com.google.android.gms "/>
+    <application
+        android:name=".module.lib.app.AIApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_seoul_here"
+        android:label="서울 여긴 챗봇"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.chat.seoul.here.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.chat.seoul.here.ChatActivity"
+            android:label="대화하기"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name="com.chat.seoul.here.SignInActivity"
+            android:label="메인화면"
+            />
+
+        <activity
+            android:name="com.chat.seoul.here.MapSearchDetailActivity"
+            android:label="명소검색결과">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mibear" android:host="test"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.chat.seoul.here.MainSrcActivity"
+            android:label="주소검색" />
+
+        <activity
+            android:name="com.chat.seoul.here.MapsActivity"
+            android:label="지도보기" />
+
+
+        <activity
+            android:name="com.chat.seoul.here.PlaceDetActivity"
+            android:label="자세히보기" />
+
+
+
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAh2-SHk5lYvbNN4Bqd8cpbEYrMQ57xOR0" />
+
+
+    </application>
+
+</manifest>

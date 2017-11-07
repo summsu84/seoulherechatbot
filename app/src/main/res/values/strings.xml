@@ -1,0 +1,92 @@
+<resources>
+
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+
+    <!--Bing Authentication URL -->
+    <string name="authenticationUri">https://api.cognitive.microsoft.com/sts/v1.0/issueToken</string>
+    <string name="app_name">서울여긴 챗봇</string>
+    <string name="action_about">About</string>
+
+    <!-- Common -->
+    <string name="common_information">알림</string>
+    <string name="common_loading_error">정보를 불러오는 중 오류가 발생했습니다. 다시 확인해주세요.</string>
+
+    <!-- SplashActivity -->
+    <string name="splash_load_progress_title">서버와 연결중입니다.</string>
+    <string name="splash_load_progress_content">서버로 부터 데이터를 가져오고 있습니다.</string>
+    <string name="splash_load_progress_current_content">주변 위치 정보를 가져오고 있습니다.</string>
+    <string name="splash_load_progress_recommend_content">추천 장소 정보를 가져오고 있습니다.</string>
+    <string name="splash_load_progress_festival_content">추천 행사 정보를 가져오고 있습니다.</string>
+    <string name="splash_load_progress_all_content">장소 정보를 가져오고 있습니다.</string>
+    <string name="splash_load_progress_prediction_content">예측 정보 서버와 연결하고 있습니다.</string>
+
+    <!-- ChatActivity -->
+    <string name="non_empty_query">텍스트를 입력해주세요</string>
+
+    <!-- ShareDet -->
+    <string name="share_det_restriction_vote">평가하기 기능은 향후 지원할 예정입니다.</string>
+    <string name="share_det_restriction_reply">댓글 기능은 향후 지원할 예정입니다.</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_msg">Your Message</string>
+    <string name="prompt_yourmsghistory">Your Chat history shows up here</string>
+    <string name="action_sendmsg">Send Message</string>
+    <string name="action_sendmsgShort">Sendmsg</string>
+
+    <string name="subscription_key">5273a5d98af44953a1286f13cf9d87a7</string>
+
+    <string name="tts_text">This is a demo of Microsoft Text to Speech.</string>
+
+    <string name="loading">봇과 연결중입니다..</string>
+    <string name="title_activity_voice_chat">VoiceChatActivity</string>
+
+
+    <string name="speech_prompt">녹음중입니다.&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">마이크 버튼을클릭해주세요.</string>
+
+
+    <!--Main -->
+    <string name="main1_img_desc">한국최초의 전용극장을 한번 구경하세요</string>
+    <string name="main2_img_desc">연극 킬 미 나우 공연 중 관객에게 다이빙 한곳!</string>
+    <string name="main3_img_desc">청계천의 역사와 문화를 배워보세요</string>
+
+
+    <!-- Map Search Detail Activity -->
+    <string name="search_rst_progress_title">잠시만 기다려주세요.</string>
+    <string name="search_rst_progress_content_map">경로를 검색하고 있습니다.</string>
+    <string name="search_rst_progress_content_place">주변명소를 찾고 있습니다.</string>
+    <string name="search_rst_list_not_found">반경내에 더이상 명소가 존재하지 않습니다. 반경 범위를 넓히시면 더 많은 명소가 보입니다.</string>
+    <string name="search_rst_planed_place_not_found">여행계획에 등록한 명소가 존재 하지 않습니다.</string>   <!--Main, SearchRst, Maps, ShareReg에서 사용-->
+    <string name="search_rst_plan_register_success">여행계획에 명소가 등록되었습니다.</string>
+    <string name="search_rst_direction_not_found">구글로부터 경로를 찾지 못했습니다. 출도착지 다시 설정해주세요.</string>
+
+
+    <string name="share_reg_address_not_found">해당 주소를 찾지 못했습니다.</string>
+    <string name="main_not_seoul">서울 특별시가 아닙니다. 장소를 다시 확인하세요.</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+    <string name="type_your_message"> 메시지를 입력하세요 </string>
+
+
+    <string name="intro_message">
+        <![CDATA[
+            [현재버전]\n
+            서울?여긴?챗봇은 구글API.AI 인공지능 자연어 처리 서비스와 파이썬을 이용한 머신러닝 알고리즘기반의 예측 서비스를 연동한 채팅기반의 챗봇 서비스 앱입니다.(현재 버전의 예측 데이터는 150개의 가상 데이터를 활용하였습니다.)\n
+            현재 버전에서는 한글자연어 처리의 인식률때문에 대화시 부자연스러울 수 있으나 지속적으로 챗봇을 훈련 시켜 나가겠습니다.\n
+            또한, 앱 사용에 제한적 사용 및 버그가 발생할수있습니다. 해당 앱을 더욱 발전시키도록 노력하겠습니다.\n
+        ]]>
+    </string>
+</resources>

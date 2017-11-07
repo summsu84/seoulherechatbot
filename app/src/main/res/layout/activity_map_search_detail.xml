@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.chat.seoul.here.MapSearchDetailActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/mapShareReg"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="반경"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/spinnerSearchRstDistance"
+            android:background="@drawable/border_round_button"
+            android:id="@+id/txtSearchRoundLabel" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerSearchRstDistance"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_round_button"
+            >
+        </Spinner>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listPlaceList"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:listSelector="@color/list_seclect"
+            android:layout_below="@+id/layoutPathInfo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutPathInfo"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSearchRstDistance"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_direction_bus"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.5"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txtSearchRstDuration"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_timer"
+                android:layout_toRightOf="@+id/txtSearchRstDistance"
+                android:layout_weight="0.5"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSearchRstCount"
+                android:textSize="20dp"
+                android:text="Count"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0.5"
+                 />
+
+        </LinearLayout>
+
+        <!--       <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line"
+                   android:id="@+id/imageView2"
+                   android:layout_above="@+id/listPlaceList"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginStart="12dp" />-->
+
+
+    </RelativeLayout>
+</LinearLayout>

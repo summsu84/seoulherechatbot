@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBotButton">#3F51B5</color>
+
+
+    <color name="white">#ffffff</color>
+<!--    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>-->
+<!--    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>-->
+    <color name="bg_gradient_start">#6699FF</color>
+    <color name="bg_gradient_end">#4174D9</color>
+
+    <!--Font Color-->
+    <color name="font_color">#5D5D5D</color>
+
+    <!--Main-->
+    <color name="main_desc">#FFFFFFE0</color>
+
+
+    <!-- SearchDet -->
+    <color name="desc_title">#000000</color>
+    <color name="common_button_text_color">#FFFFFFE0</color>
+
+
+    <!--SearchRst -->
+    <color name="list_seclect">#FF00E0E0</color>
+</resources>

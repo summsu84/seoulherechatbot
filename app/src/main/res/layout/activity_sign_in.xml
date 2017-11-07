@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/main_activity_horizontal_margin"
+    android:paddingLeft="@dimen/main_activity_horizontal_margin"
+    android:paddingRight="@dimen/main_activity_horizontal_margin"
+    android:paddingTop="@dimen/main_activity_horizontal_margin"
+    android:background="#FFFFFFFF"
+    tools:context="com.chat.seoul.here.SignInActivity">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_sign_in">
+
+
+
+<!--        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipe_layout">-->
+
+ <!--           <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="220dp"
+                        android:id="@+id/imgMain"
+                        android:src="@drawable/main_seoul_with_text"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imgRecommendToday"
+                        android:src="@drawable/text_recommend_tody"
+                        android:layout_marginLeft="@dimen/main_text_image_padding_left"
+                        />
+
+<!--                      <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="오늘의 추천 장소"
+                        android:textSize="25dp"
+                        />-->
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpagerMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="@dimen/main_viewpager_padding_left"
+                        android:layout_marginRight="@dimen/main_viewpager_padding_right"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/layout_email_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewpagerMain"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+<!--                       <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현재 위치 추천 장소"
+                        android:textSize="25dp"
+                        />-->
+
+                    <ImageView
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/text_recommend_current"
+                        android:layout_marginLeft="@dimen/main_text_image_padding_left"
+                        />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpagerCurrentPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="@dimen/main_viewpager_padding_left"
+                        android:layout_marginRight="@dimen/main_viewpager_padding_right"
+                        />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"/>
+
+                    <ImageView
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/text_recommend_festival"
+                        android:layout_marginLeft="@dimen/main_text_image_padding_left"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerviewMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_sns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/imgButtonLine"
+                            android:layout_width="@dimen/main_sns_icon_dimen"
+                            android:layout_height="@dimen/main_sns_icon_dimen"
+                            android:src="@drawable/icn_line"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/xml_border"
+                            android:layout_gravity="center_horizontal"
+                            android:visibility="gone"
+
+                             />
+
+                        <ImageButton
+                            android:id="@+id/imgButtonTelegram"
+                            android:layout_width="@dimen/main_sns_icon_dimen"
+                            android:layout_height="@dimen/main_sns_icon_dimen"
+                            android:src="@drawable/icn_telegram"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/xml_border"
+                            android:visibility="gone"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/imgButtonFacebook"
+                            android:layout_width="@dimen/main_sns_icon_dimen"
+                            android:layout_height="@dimen/main_sns_icon_dimen"
+                            android:src="@drawable/icn_facebook"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/xml_border"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_rectangle_blue_button"
+        android:textColor="#ffffffff"
+        android:layout_alignParentBottom="true"
+        android:text="봇과 대화하기"
+        />
+
+</RelativeLayout>
+

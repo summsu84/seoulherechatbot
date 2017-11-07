@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- MainActivity -->
+    <dimen name="main_activity_horizontal_margin">0dp</dimen>
+    <dimen name="main_activity_vertical_margin">0dp</dimen>
+    <dimen name="main_viewpager_padding_top">10dp</dimen>
+    <dimen name="main_viewpager_padding_left">15dp</dimen>
+    <dimen name="main_viewpager_padding_right">15dp</dimen>
+    <dimen name="main_viewpager_padding_bottom">10dp</dimen>
+
+    <dimen name="main_text_image_padding_left">15dp</dimen>
+
+    <dimen name="main_sns_icon_dimen">50dp</dimen>
+
+    <!-- Chat Activity -->
+    <dimen name="chat_activity_horizontal_margin">0dp</dimen>
+    <dimen name="chat_activity_vertical_margin">0dp</dimen>
+
+    <!-- ViewPageer -->
+    <dimen name="chat_activity_view_pager_right_nav_margin">-10dp</dimen>
+    <dimen name="chat_activity_view_pager_left_nav_margin">-10dp</dimen>
+
+    <!-- MapSearchDetActivity - Listview-->
+    <dimen name="map_search_activity_list_view_margin">10dp</dimen>
+    <dimen name="map_search_activity_list_view_to_margin">5dp</dimen>
+
+
+    <!-- SearchDet Activity-->
+    <dimen name="search_det_linear_padding_top_bottom">-10dp</dimen>
+    <dimen name="search_det_linear_padding_left_right">20dp</dimen>
+    <dimen name="search_det_detail_content_width">100dp</dimen>
+
+</resources>

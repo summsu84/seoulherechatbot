@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jjw.mydemo.Main3Activity">
+
+    <item
+        android:id="@+id/action_ms"
+        android:orderInCategory="100"
+        android:title="MS Voice"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_google"
+        android:orderInCategory="100"
+        android:title="Google Voice"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_korean"
+        android:orderInCategory="100"
+        android:title="한국어"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_english"
+        android:orderInCategory="100"
+        android:title="영어"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_mute_on"
+        android:orderInCategory="100"
+        android:title="안드로이드 TTS"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_mute_off"
+        android:orderInCategory="100"
+        android:title="MS TTS"
+        app:showAsAction="never" />
+
+
+
+    <item
+        android:id="@+id/action_delete_message"
+        android:orderInCategory="100"
+        android:title="메시지 지우기"
+        app:showAsAction="never" />
+
+</menu>

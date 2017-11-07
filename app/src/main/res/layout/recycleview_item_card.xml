@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mainCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/card_template"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:layout_toEndOf="@+id/imgFestivalClass">
+
+            <TextView
+                android:id="@+id/txtFestivalClass"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="Class" />
+
+            <TextView
+                android:id="@+id/txtFestivalName"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Festival Name"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/darker_gray"
+                />
+
+
+            <TextView
+                android:id="@+id/txtFestivalPlace"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Festival Place"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:id="@+id/txtFestivalDate"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Festival Date"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/darker_gray"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFestivalClass"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="-5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chatbot" />
+
+        <Button
+            android:id="@+id/btnFestivalMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자세히 보기"
+            android:layout_below="@+id/imgFestivalClass"
+            android:background="@drawable/border_rectangle_transparent_button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
